@@ -124,7 +124,7 @@
 		finalCenter = spaceLeft - fabsf(finalCenter);
 		finalCenter = finalCenter < 0 ? 0 : finalCenter;
 	}
-	return finalCenter;
+	return finalCenter - (self.superview.frame.origin.x / 2);
 }
 
 // Only override drawRect: if you perform custom drawing.
